@@ -3,7 +3,7 @@ import biryaniImg from "./biryani.webp";
 import halwaImg from "./gaajar_halwa.webp";
 
 
-export const menu = function () {
+export const load_menu = function () {
     // Better! : could have created objects
     let dish_names = ["Rajma Chawal", "Biryani", "Gaajar Halwa"];
     let dish_images = [rajmaImg, biryaniImg, halwaImg];
@@ -13,6 +13,7 @@ export const menu = function () {
     let dish_descriptions = [rajma_desc,biryani_desc,halwa_desc];
 
     let content = document.querySelector("#content");
+    content.innerHTML = "";
     for(let i=0; i<3; i++){
 
         let div_dish_container = document.createElement("div");
